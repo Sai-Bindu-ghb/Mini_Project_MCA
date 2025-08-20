@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playwrite+CL+Guides&family=Playwrite+ES+Deco+Guides&family=Playwrite+ES+Guides&family=Playwrite+VN+Guides&family=Quicksand:wght@300..700&display=swap');
+        body {
+            font-family: Arial, sans-serif;
+      background-image: url('./images/regi.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+        }
+
+        .main-container {
+            display: flex;
+            background: #ffffff;
+            width: 80%;
+            max-width: 900px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .form-container {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+
+        .image-container {
+            flex: 1;
+      background: url('./images/signup.avif') no-repeat center center;
+      opacity: 0.7;
+      background-size: cover;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333333;
+            margin-bottom: 20px;
+            font-family: "Lobster", serif;
+            font-size:50px;
+            font-weight:lighter;
+        }
+
+        form label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #555555;
+        }
+
+        form input {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            margin-left:25px;
+            box-sizing: border-box;
+        }
+
+        form input:focus {
+            border-color: #007bff;
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+
+        form button {
+            width: 90%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            margin-left:25px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        form button:hover {
+            background-color:rgb(55, 212, 23);
+        }
+
+        p {
+            text-align: center;
+            color: #555555;
+            font-size:18px;
+        }
+
+        p a {
+            color: rgb(236, 89, 89);
+            text-decoration: none;
+        }
+
+        p a:hover {
+            text-decoration: underline;
+        }
+        #text{
+            margin-left:25px;
+            font-size: 17px;
+        }
+        #registerPassword{
+            font-size: 14px;
+        }
+        #registerMobile{
+            font-size: 14px;
+        }
+        @media only screen and (width:320px){
+            .main-container{
+                width:90%;
+                height:90%;
+            }
+            .image-container{
+               display:none;
+               flex:0;
+            }  
+            h2{
+                font-size:25px;
+            }  
+            #text{
+                font-size:13px;
+                margin-left:10px !important;
+            }
+            #registerEmail{
+                height:7%;
+                margin-left:10px;
+            }
+            #registerMobile{
+                height:7%;
+                margin-left:10px;
+            }
+            #registerPassword{
+                height:7%;
+                margin-left:10px;
+            }
+            #confirmPassword{
+                height:7%;
+                margin-left:10px;
+            }
+            p{
+                font-size:14px;
+                margin-top:-40px;
+            }
+            p a{
+                font-size:14px;
+            }
+            form button{
+                width:90%;
+                height:9%;
+                margin-left:10px;
+                font-size:15px;
+                
+            }
+        }
+        @media only screen and (width:375px){
+            .main-container{
+                width:90%;
+                height:90%;
+            }
+            .image-container{
+               display:none;
+               flex:0;
+            }  
+            h2{
+                font-size:25px;
+            }  
+            #text{
+                font-size:13px;
+                margin-left:10px !important;
+            }
+            #registerEmail{
+                height:7%;
+                margin-left:10px;
+            }
+            #registerMobile{
+                height:7%;
+                margin-left:10px;
+            }
+            #registerPassword{
+                height:7%;
+                margin-left:10px;
+            }
+            #confirmPassword{
+                height:7%;
+                margin-left:10px;
+            }
+            p{
+                font-size:14px;
+                margin-top:-40px;
+            }
+            p a{
+                font-size:14px;
+            }
+            form button{
+                width:90%;
+                height:9%;
+                margin-left:10px;
+                font-size:15px;
+                
+            }
+        }
+        @media only screen and (width:425px){
+            .main-container{
+                width:90%;
+                height:90%;
+            }
+            .image-container{
+               display:none;
+               flex:0;
+            }  
+            h2{
+                font-size:25px;
+            }  
+            #text{
+                font-size:13px;
+                margin-left:10px !important;
+            }
+            #registerEmail{
+                height:7%;
+                margin-left:10px;
+            }
+            #registerMobile{
+                height:7%;
+                margin-left:10px;
+            }
+            #registerPassword{
+                height:7%;
+                margin-left:10px;
+            }
+            #confirmPassword{
+                height:7%;
+                margin-left:10px;
+            }
+            p{
+                font-size:14px;
+                margin-top:-40px;
+            }
+            p a{
+                font-size:14px;
+            }
+            form button{
+                width:90%;
+                height:9%;
+                margin-left:10px;
+                font-size:15px;
+                
+            }
+        }
+        @media only screen and (width:768px){
+            .main-container{
+                width:90%;
+                height:90%;
+            }
+            
+            h2{
+                font-size:25px;
+            }  
+            #text{
+                font-size:13px;
+                margin-left:10px !important;
+            }
+            #registerEmail{
+                height:7%;
+                margin-left:10px;
+            }
+            #registerMobile{
+                height:7%;
+                margin-left:10px;
+            }
+            #registerPassword{
+                height:7%;
+                margin-left:10px;
+            }
+            #confirmPassword{
+                height:7%;
+                margin-left:10px;
+            }
+            p{
+                font-size:14px;
+                margin-top:-40px;
+            }
+            p a{
+                font-size:14px;
+            }
+            form button{
+                width:90%;
+                height:9%;
+                margin-left:10px;
+                font-size:15px;
+                
+            }
+        }
+        @media only screen and (width:1024px){
+            .main-container{
+                width:85%;
+                height:85%;
+            }
+            
+            h2{
+                font-size:25px;
+            }  
+            #text{
+                font-size:15px !important;
+                margin-left:20px !important;
+            }
+            #registerEmail{
+                height:7%;
+                margin-left:20px;
+            }
+            #registerMobile{
+                height:7%;
+                margin-left:20px;
+            }
+            #registerPassword{
+                height:7%;
+                margin-left:20px;
+            }
+            #confirmPassword{
+                height:7%;
+                margin-left:20px;
+            }
+            p{
+                font-size:15px;
+                margin-top:-40px;
+            }
+            p a{
+                font-size:15px;
+            }
+            form button{
+                width:90%;
+                height:9%;
+                margin-left:20px;
+                font-size:15px;
+                
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <!-- Left form section -->
+        <div class="form-container">
+            <h2>Register</h2>
+            <form id="registerForm">
+                <label for="registerEmail" id="text">Email <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" fill="currentColor" class="bi bi-envelope-arrow-up-fill" viewBox="0 0 16 16">
+                    <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zm.192 8.159 6.57-4.027L8 9.586l1.239-.757.367.225A4.49 4.49 0 0 0 8 12.5c0 .526.09 1.03.256 1.5H2a2 2 0 0 1-1.808-1.144M16 4.697v4.974A4.5 4.5 0 0 0 12.5 8a4.5 4.5 0 0 0-1.965.45l-.338-.207z"/>
+                    <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.354-5.354 1.25 1.25a.5.5 0 0 1-.708.708L13 12.207V14a.5.5 0 0 1-1 0v-1.717l-.28.305a.5.5 0 0 1-.737-.676l1.149-1.25a.5.5 0 0 1 .722-.016"/>
+                  </svg> :</label>
+                <input type="email" id="registerEmail" required>
+
+                <label for="registerMobile"id="text">Mobile Number <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-telephone-inbound-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877zM15.854.146a.5.5 0 0 1 0 .708L11.707 5H14.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0v2.793L15.146.146a.5.5 0 0 1 .708 0"/>
+                  </svg> :</label>
+                <input type="tel" id="registerMobile" pattern="[0-9]{10}" required placeholder="Enter 10-digit mobile number">
+
+                <label for="registerPassword"id="text">Password <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
+                    <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
+                  </svg> :</label>
+                <input type="password" id="registerPassword" required minlength="6" placeholder="Minimum 6 characters">
+
+                <label for="confirmPassword"id="text">Confirm Password <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-slash-fill" viewBox="0 0 16 16">
+                    <path d="m10.79 12.912-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7 7 0 0 0 2.79-.588M5.21 3.088A7 7 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474z"/>
+                    <path d="M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829zm4.95.708-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829zm3.171 6-12-12 .708-.708 12 12z"/>
+                  </svg> :</label>
+                <input type="password" id="confirmPassword" required>
+
+                <button type="submit">Register</button>
+            </form>
+            <p>Already have an account? <a href="login.html">Login here</a></p>
+        </div>
+
+        <!-- Right image section -->
+        <div class="image-container"></div>
+    </div>
+
+    <script>
+        document.getElementById('registerForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const email = document.getElementById('registerEmail').value;
+            const mobile = document.getElementById('registerMobile').value;
+            const password = document.getElementById('registerPassword').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+
+            if (localStorage.getItem(email)) {
+                alert('Account already exists!');
+            } else if (password !== confirmPassword) {
+                alert('Passwords do not match!');
+            } else {
+                localStorage.setItem(email, JSON.stringify({ password: password, mobile: mobile }));
+                alert('Registration successful!');
+                window.location.href = 'login.html';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playwrite+CL+Guides&family=Playwrite+ES+Deco+Guides&family=Playwrite+ES+Guides&family=Playwrite+VN+Guides&family=Quicksand:wght@300..700&display=swap');
+        body {
+            font-family: Arial, sans-serif;
+            background-image:url('./images/bglogi.avif');
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .main-container {
+            display: flex;
+            background: #ffffff;
+            width: 70%;
+            max-width: 900px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            height:570px;
+        }
+
+        .image-container {
+            flex: 1;
+            background: url('./images/login1.jpg') no-repeat center center;
+            background-size: cover;
+        }
+
+        .form-container {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            box-sizing: border-box;
+            margin-bottom: 9%;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333333;
+            margin-bottom: 20px;
+            font-family: "Lobster", serif;
+            font-size:50px;
+            font-weight:lighter;
+        }
+
+        form label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #555555;
+        }
+
+        form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            
+        }
+
+        form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        form button:hover {
+            background-color:rgb(55, 212, 23);
+        }
+
+        p {
+            text-align: center;
+            color: #555555;
+            font-size:18px;
+        }
+
+        p a {
+            color: rgb(235, 101, 12);
+            text-decoration: none;
+        }
+
+        p a:hover {
+            text-decoration: underline;
+        }
+        #email{
+            font-size: 20px;
+        }
+        @media only screen and (width:320px){
+            .main-container{
+                width:90%;
+                height:70%;
+            }
+            .image-container{
+               display:none;
+            }  
+            h2{
+                font-size:30px;
+            }  
+            #email{
+                font-size:15px;
+            }
+            p{
+                font-size:15px;
+            }
+        }
+        @media only screen and (width:375px){
+            .main-container{
+                width:90%;
+                height:70%;
+            }
+            .image-container{
+               display:none;
+               flex:0;
+            }  
+            h2{
+                font-size:30px;
+            }  
+            #email{
+                font-size:15px;
+            }
+            p{
+                font-size:15px;
+            }
+        }
+        @media only screen and (width:425px){
+            .main-container{
+                width:90%;
+                height:70%;
+            }
+            .image-container{
+               display:none;
+               flex:0;
+            }  
+            h2{
+                font-size:30px;
+            }  
+            #email{
+                font-size:15px;
+            }
+            p{
+                font-size:15px;
+            }
+        }
+        @media only screen and (width:1024px){
+            .main-container{
+                width:85%;
+                height:85%;
+            }
+            
+            h2{
+                font-size:30px;
+            }  
+            #email{
+                font-size:15px;
+            }
+            p{
+                font-size:15px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <!-- Left image section -->
+        <div class="image-container"></div>
+        
+        <!-- Right login form section -->
+        <div class="form-container">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="loginEmail" id="email">Email :</label>
+                <input type="email" id="loginEmail" required>
+
+                <label for="loginPassword"id="email">Password:</label>
+                <input type="password" id="loginPassword" required>
+
+                <button type="submit">Log In</button>
+            </form>
+            <p>Don't have an account? <a href="sign.html">Register here</a></p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const email = document.getElementById('loginEmail').value;
+            const password = document.getElementById('loginPassword').value;
+
+            const storedUser = JSON.parse(localStorage.getItem(email));
+            if (storedUser) {
+                if (storedUser.password === password) {
+                    alert('Login successful!');
+                    window.location.href = 'index.html'; // Redirect to index page after successful login
+                } else {
+                    alert('Invalid password!');
+                }
+            } else {
+                alert('It looks like you have not registered yet. Please register first!');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,528 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playwrite+ES+Deco+Guides&family=Playwrite+ES+Guides&family=Playwrite+VN+Guides&family=Quicksand:wght@300..700&display=swap');
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        html{
+            overflow-x: hidden;
+        }
+        #logo{
+            height: 50px;
+            width:60px;
+            border-radius: 50%;
+            margin-left: 15px;
+            margin-top: 20px;
+            margin-right: 10px;
+        }
+
+        @media only screen and (max-width:768px){
+            #logo{
+                height: 35px;
+                width:35px;
+                margin-left: -3px;
+                border-radius: 50%;
+            }
+        }
+        #home{
+            margin-left: -33px !important;;
+        }
+        #searchInput{
+            border-radius: 20px;
+            height:50px;
+            font-size:20px;
+            width:400px;
+            border:1px solid #ccc;
+            margin-left: 48%;
+            margin-top: 20px;
+            padding: 10px;
+        }
+
+        @media only screen and (max-width:768px){
+            #searchInput{
+                border-radius: 20px;
+                height:25px;
+                width:100px;
+                margin-left:15px;
+                border:1px solid #ccc;
+                margin-top: 25px;
+                padding: 10px;
+                font-size: 12px;
+            }
+        }
+
+        header {
+            background-color: #333;
+            opacity: 2px;
+            color: white;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ddd; /* Optional border */
+            display: flex;
+            padding-bottom: 30px;
+            justify-content: space-between;
+        }
+
+        .mul{
+            margin-top: 20px;
+            margin-left: 20px;
+        
+        }
+
+        @media only screen and (max-width:545px){
+            body{
+                overflow-x: hidden;
+            }
+            html{
+                overflow-x: hidden;
+            }
+            .mul{
+                margin-top: 9% !important;
+                margin-left: -2px;
+                font-size: 19px;
+            }
+        }
+        @media only screen and (width:375px){
+            .mul{
+                
+                font-size: 25px;
+            }
+            #chess{
+                margin-bottom: 35px;
+            }
+            #logo{
+                margin-top: 27px;
+            }
+            #searchInput{
+                height:30px;
+                width:110px;
+                margin-top: 32px;
+            }
+            .foot1{
+                padding-left:0px !important;
+                padding-right:0px !important;
+            }
+            .text{
+                font-size:25px !important;
+            }
+            #english{
+                margin-left:50px !important;
+            }
+            #hindi{
+                margin-left:50px !important;
+            }
+            body{
+                overflow-x: hidden;
+            }
+            html{
+                overflow-x: hidden;
+            }
+        }
+        @media only screen and (width:320px){
+            #english{
+                margin-left:50px !important;
+            }
+            #hindi{
+                margin-left:50px !important;
+            }
+            #profile{
+                margin-left:10px !important;
+                
+            }
+        }
+        @media only screen and (width:425px){
+            .mul{
+                
+                font-size: 28px;
+                margin-top: 27px !important;
+            }
+            #logo{
+                margin-top: 27px;
+                height:40px;
+                width:40px;
+            }
+            #searchInput{
+                height:30px;
+                width:110px;
+                margin-top: 32px;
+            }
+            .foot1{
+                padding-left:0px !important;
+                padding-right:0px !important;
+            }
+            .text{
+                font-size:25px !important;
+            }
+            .level{
+                width:380px;
+                margin-left: 12px !important;
+
+            }
+            .level1{
+                width:380px;
+                margin-left: 12px !important;
+
+            }
+            .level2{
+                width:380px;
+                margin-left: 12px !important;
+
+            }  
+            #english{
+                margin-left:50px !important;
+            }
+            #hindi{
+                margin-left:50px !important;
+            }
+            
+            
+        }
+        @media only screen and (width:768px){
+            body{
+                overflow-x: hidden;
+            }
+            html{
+                overflow-x: hidden;
+            }
+            .mul{
+                
+                font-size: 35px;
+                margin-top: 30px;
+                margin-left: -250px !important;
+            }
+            #logo{
+                margin-top: 27px;
+                height:60px;
+                width:60px;
+            }
+            #searchInput{
+                height:40px;
+                width:150px;
+                margin-right: 10px !important;
+            }
+            .text{
+                font-size:26px !important;
+                margin-left: -30px !important;
+            }
+            .text2{
+                font-size:22px !important;
+                margin-Top: 28px !important;
+                margin-left: -15px !important;
+                
+            }
+           #w{
+            margin-left: -180px !important;
+           }
+           #card1{
+            height:550px;
+           }
+           
+           
+           #loginButton{
+            margin-left: -150px !important;
+           }
+           
+          .card-text1{
+            font-size: 15px;
+          }
+          #read{
+            margin-Top: 30px !important;
+          }
+          
+          .two{
+            height:650px;
+          }
+          .card-text{
+            font-size: 14px;
+          }
+          .hello{
+            height:650px;
+          }
+          #read1{
+            margin-Top: 50px !important;
+          }
+          
+           
+        }
+        
+        @media only screen and (width:1024px){
+            #searchInput{
+                
+                margin-left: 0px !important;
+            }
+            .mul{
+                margin-right:260px !important;
+            }
+            #w{
+                margin-left: -210px !important;
+            }
+            nav a {
+                float: left;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size:20px;
+               
+               
+            }
+            #hom{
+                margin-left:-45px !important;
+            }
+        }
+
+        .sp{
+            color:rgb(166, 231, 223);
+            
+        }
+        
+
+        nav {
+            background-color: #444;
+            overflow: hidden;
+            padding-left: 400px;
+            
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size:20px;
+           
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+        #english{
+            color:white;
+            margin-right:6px;
+            font-size:20px;
+        }
+        @media only screen and (max-width:575px){
+            #english{
+                margin-left:16px;
+            }
+            .navbar-toggler{
+                margin-left:25px;
+            }
+        }
+        #hindi{
+            color:white;
+            margin-left:6px;
+            font-size:20px;
+        }
+        
+
+        #carouselExampleControls{
+            margin-top:3px;
+        }
+        a{
+            color:white;
+        }
+
+        .news-article {
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+        }
+
+        .news-article img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .slide{
+          height:500px;
+          width:100%;
+          position: relative;
+          
+        }
+        
+        .text{
+            position: absolute;
+            font-family: "Playwrite VN Guides", serif;
+            top:37%;
+            left:50%;
+            color:black;
+            font-size: 35px;
+        }
+        .text1{
+            color:navy;   
+        
+        }
+        .text3{
+            color:red;   
+        
+        }
+        .text2{
+            position: absolute;
+            
+            top:55%;
+            left:42.5%;
+            color:black;
+            font-size: 30px;
+        }
+        @media only screen and (max-width:575px){
+            .text{
+                top:20%;
+            left:43%;
+            font-size:20px;
+            }
+            .text2{
+                top:55%;
+                font-size:15px;
+            }
+        }
+        .card-img-top{
+            height:200px;
+        }
+        #firstR{
+            margin-top:23px;
+        }
+        .two{
+            margin-top:30px;
+            margin-bottom: 10px;
+        }
+        
+        .card:hover{
+            width:100%;
+            height:98%;
+            transition: 0.5s;
+            transform: scale(1.07);
+            
+        }
+        .hello:hover{
+            width:100%;
+            height:90%;
+            transition: 0.5s;
+            transform: scale(1.07);
+        }
+        .con2{
+            background-color: aliceblue;
+            margin-bottom: 50px;
+        }
+        .hello{
+            margin-bottom: 50px;
+        }
+        #content{
+            padding-top:10px;
+        }
+        #firsts{
+            margin-top:46px;
+        }
+        #firstt{
+            margin-top:68px;
+        }
+        
+        .foot1{
+            font-size:20px;
+        }
+        @media only screen and (max-width:575px){
+            .foot1{
+                font-size: 15px !important;
+               text-align: center !important;
+               
+            }
+            
+        }
+        
+        /* Existing styles remain unchanged */
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    
+    .card-img-top {
+        height: 180px;
+    }
+}
+
+@media (max-width: 992px) {
+    nav {
+        padding-left: 200px;
+    }
+    nav a {
+        font-size: 18px;
+        padding: 10px;
+    }
+    .slide {
+        height: 400px;
+    }
+}
+
+@media (width: 768px) {
+    
+    .card {
+        margin-bottom: 20px;
+    }
+    .two {
+        margin-top: 20px;
+    }
+    h5{
+        font-size:13px;
+    }
+    .card-img-top{
+        height:160px !important;
+        width: 214px !important;;
+    }
+    .two{
+        height:580px;
+    }
+    .hello{
+        height:580px;
+    }
+}
+
+@media (max-width: 576px) {
+    
+    nav {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    nav a {
+        font-size: 16px;
+        padding: 8px;
+    }
+    .slide {
+        height: 300px;
+    }
+    .card-img-top {
+        height: 140px;
+    }
+    
+}
+#profile{
+    height: 80px;
+    width:70px;
+    border-radius: 50%;
+    margin-bottom:-10px;
+    margin-top: 120px;
+    margin-left: -220px;
+}
+
+
+
+        
+        
+        
+        
+        
+        
+        

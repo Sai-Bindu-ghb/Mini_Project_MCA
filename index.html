@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+  <title>Multilingual News Website</title>
+
+</head>
+
+<body>
+  <header>
+    <img src="./images/logo2.jpg" alt="Logo" id="logo">
+    <h2 class="mul"><span class="sp">C</span>urrent <span class="sp">C</span>licks!</h2>
+    <input type="text" id="searchInput" placeholder="Search for news..." oninput="filterNews()" />
+  </header>
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid" id="home">
+      <ul class="navbar-nav ms-auto" id="userProfileSection">
+        <!-- User profile will be dynamically injected here -->
+      </ul>
+      <a class="navbar-brand" href="index.html" id="hom">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" id="english" href="english.html">English</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="hindi" href="hindi.html">Hindi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="hindi" href="telugu.html">Telugu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="hindi" href="about.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="hindi" href="contact.html">Contact us</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./images/globe.jpg" alt="globe" class="slide">
+        <div class="row">
+          <div class="col-md-4">
+          </div>
+
+          <div class="col-md-4">
+            <p class="text">Welcome to current clicks<span class=text1>!</span></p>
+            <p class="text2"><span class=text3>"</span>In seeking truth, you have to get both sides of a story.<span
+                class=text3>"</span></p>
+          </div>
+
+          <div class="col-md-4">
+          </div>
+
+        </div>
+
+      </div>
+      <div class="carousel-item">
+        <img src="./images/car2.jpg" class="slide" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/car.jpg" class="slide" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/business.jpg" class="slide" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div><br>
+  <!-- Offcanvas for User Profile -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasProfile" aria-labelledby="offcanvasProfileLabel">
+    <div class="offcanvas-header">
+      <h5 id="offcanvasProfileLabel">User Profile</h5>
+      <div><img src="./images/user.jpg" alt="Logo" id="profile"></div>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <p id="welcomeMessage"></p>
+      <button class="btn btn-danger" id="logoutButton">Logout</button>
+    </div>
+  </div>
+  <!-- Top Stories Section -->
+  <div class="container mt-5" data-aos="flip-left">
+    <h2 class="text-center mb-4">Top Stories</h2>
+    <div class="row level">
+      <div class="col-md-4" id="chess">
+        <div class="card" id="card1">
+          <img src="./images/Top1.jpeg" class="card-img-top" alt="Story 1">
+          <div class="card-body">
+            <h5 class="card-title">JEE Advanced, AAT 2025 dates announced; register by May 2</h5>
+            <p class="card-text">The exam conducting body, Indian Institute of Technology (IIT) Kanpur has released the
+              information brochure for the JEE Advanced 2025 and Architecture Aptitude Test (AAT) 2025.</p>
+            <center><a href="comment.html" class="btn btn-primary" id="firstR">Read More</a></center>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" id="chess">
+        <div class="card" id="card1">
+          <img src="./images/Top2.avif" class="card-img-top" alt="Story 2">
+          <div class="card-body">
+            <h5 class="card-title">Chess: Gukesh and India celebrate after win but new challenges are emerging</h5>
+            <p class="card-text">Gukesh Dommaraju, 18, had a rapturous reception from Indian fans when he flew back to
+              Chennai after deposing China’s Ding Liren for the world title 7.5-6.5 by winning their 14th and final game
+              in Singapore.</p>
+            <center class="gu"><a href="comment1.html" class="btn btn-primary" id="firstR">Read More</a></center>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" id="card1">
+          <img src="./images/Top3.avif" class="card-img-top" alt="Story 3">
+          <div class="card-body">
+            <h5 class="card-title">PAN Card fraud: This email asking you to "download e-PAN card online" is fake; tips
+              to avoid scams and more</h5>
+            <p class="card-text1" id="pan">Scammers are continuously evolving in their ways to lure their victims and
+              dupe them. The latest attempt is a PAN card fraud where scammers impersonate a government official. </p>
+            <center><a href="comment2.html" class="btn btn-primary" id="read">Read More</a></center>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row level1">
+      <div class="col-md-4">
+        <div class="card two">
+          <img src="./images/Top4.webp" class="card-img-top" alt="Story 3">
+          <div class="card-body">
+            <h5 class="card-title">Google’s Sergey Brin admits they bunged up their AI as calls for Sundar Pichai to
+              step down intensify</h5>
+            <p class="card-text">Google’s CEO Sundar Pichai has been put on the spot following the controversy that
+              their AI chatbot, Gemini has created. Several analysts, including a few prominent ones who have great
+              influence over Google’s staff. </p>
+            <center><a href="comment3.html" class="btn btn-primary">Read More</a></center>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card two">
+          <img src="./images/Top5.avif" class="card-img-top" alt="Story 3">
+          <div class="card-body">
+            <h5 class="card-title">NSE, BSE to keep stock markets open on Saturday, February 1, for Union Budget 2025
+            </h5>
+            <p class="card-text">The National Stock Exchange of India (NSE) and BSE will have full trading on Saturday,
+              February 1, on account of the Union Budget 2025 presentation, the exchanges said on Monday."Members are
+              requested to note that “T0” session shall not be scheduled . </p>
+            <center><a href="comment4.html" class="btn btn-primary">Read More</a></center>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card two">
+          <img src="./images/Top6.jpg" class="card-img-top" alt="Story 3">
+          <div class="card-body">
+            <h5 class="card-title">Odisha CM Mohan Majhi Meets PM Modi</h5>
+            <p class="card-text">“Today, I met the Honourable Prime Minister of India, Shri Narendra Modu and discussed
+              various important issues. On behalf of the people of Odisha, I would like to express my gratitude for all
+              the support he has given to the development of Odisha,” CM Majhi wrote on his ‘X’ handle</p>
+            <center><a href="comment5.html" class="btn btn-primary" id="firstR">Read More</a></center>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><br><br>
+  <div class="container con2" data-aos="fade-down-left">
+    <h2 class="text-center mb-4" id="content">News Articles</h2>
+    <center>
+      <p>-----<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-book-half"
+          viewBox="0 0 16 16">
+          <path
+            d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783" />
+        </svg>-----</p>
+    </center>
+    <div class="row level2">
+      <div class="col-md-4">
+        <div class="card hello">
+          <img src="./images/art1.jpg" class="card-img-top" alt="Story 1">
+          <div class="card-body">
+            <h5 class="card-title">Things fall apart; the centre cannot hold</h5>
+            <p class="card-text">Lum Sohpetbneng, lording over the man-made Umiam lake about 20 kilometres short of
+              Meghalaya’s capital Shillong, is one of the most revered peaks for the matrilineal Khasi
+              tribe.Sohpetbneng, meaning ‘navel of heaven’, is believed to have had a mythical umbilical cord connecting
+              heaven and earth before human pride and sin severed the link.</p>
+            <center><a href="comment6.html" class="btn btn-primary">Read More</a></center>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card hello">
+          <img src="./images/art2.jpg" class="card-img-top" alt="Story 1">
+          <div class="card-body">
+            <h5 class="card-title">Standing Committee urges railways to review AC class fares to increase passenger
+              revenues</h5>
+            <p class="card-text">The Parliamentary Standing Committee on Railways, in its report tabled in Lok Sabha on
+              Friday (December 13, 2024), observed that railways’ revenues from the passenger segment are substantially
+              lower as compared to freight revenues.</p>
+            <center><a href="comment7.html" class="btn btn-primary">Read More</a></center>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card hello">
+          <img src="./images/art3.jpg" class="card-img-top" alt="Story 1">
+          <div class="card-body">
+            <h5 class="card-title">Passing-out of graduate marine engineers held</h5>
+            <p class="card-text">The passing-out ceremony of the 50th batch of the graduate marine engineers of the
+              Cochin Shipyard Marine Engineering Training Institute was held on the institute campus on Friday.Mohandas
+              distributed prizes to the cadets who excelled in various disciplines</p>
+            <center><a href="comment8.html" class="btn btn-primary" id="read1">Read More</a></center>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p class="foot1">&copy; 2024 Current Clicks ! All rights reserved</p>
+  </footer>
+  <link rel="script" href="script.js">
+  <script>
+
+    function filterNews() {
+      const query = document.getElementById("searchInput").value.toLowerCase();
+      const newsItems = document.querySelectorAll(".card");
+      let hasResults = false;
+
+      newsItems.forEach((item) => {
+        const text = item.textContent.toLowerCase();
+        if (text.includes(query)) {
+          item.style.display = "block";
+          hasResults = true;
+        } else {
+          item.style.display = "none";
+        }
+      });
+
+      // Show or hide the custom alert message
+      const noResultsAlert = document.getElementById("noResultsAlert");
+      if (!hasResults) {
+        noResultsAlert.style.display = "block";
+      } else {
+        noResultsAlert.style.display = "none";
+      }
+    }
+    AOS.init();
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const userProfileSection = document.getElementById('userProfileSection');
+
+      function renderUserProfile() {
+        const username = localStorage.getItem('username');
+        userProfileSection.innerHTML = '';
+
+        if (username) {
+          userProfileSection.innerHTML = `
+                  <li class="nav-item">
+                      <a class="nav-link" href="#" id="w"data-bs-toggle="offcanvas" data-bs-target="#offcanvasProfile" aria-controls="offcanvasProfile">
+                          Welcome, ${username} !
+                      </a>
+                  </li>
+              `;
+          document.getElementById('welcomeMessage').textContent = `Hello, ${username}!`;
+          document.getElementById('w').style.color = "rgb(236, 164, 218)";
+          document.getElementById('w').style.fontSize = "20px";
+
+
+
+          document.getElementById('logoutButton').addEventListener('click', function () {
+            localStorage.removeItem('username');
+            alert('You have logged out.');
+            location.reload();
+          });
+        } else {
+          userProfileSection.innerHTML = `
+                  <li class="nav-item">
+                      <a class="nav-link" href="#" id="loginButton">My Account</a>
+                  </li>
+              `;
+          document.getElementById('loginButton').style.color = "white";
+          document.getElementById('loginButton').style.fontSize = "20px";
+          document.getElementById('loginButton').addEventListener('click', function () {
+            const username = prompt('Please enter your name:');
+            if (username) {
+              localStorage.setItem('username', username);
+              alert(`Welcome, ${username}!`);
+              location.reload();
+            }
+          });
+        }
+      }
+
+      renderUserProfile();
+    });
+
+    function filterNews() {
+      const query = document.getElementById("searchInput").value.toLowerCase();
+      const newsItems = document.querySelectorAll(".card");
+      let hasResults = false;
+
+      newsItems.forEach((item) => {
+        const text = item.textContent.toLowerCase();
+        if (text.includes(query)) {
+          item.style.display = "block";
+          hasResults = true;
+        } else {
+          item.style.display = "none";
+        }
+      });
+
+      const noResultsAlert = document.getElementById("noResultsAlert");
+      if (!hasResults) {
+        noResultsAlert.style.display = "block";
+      } else {
+        noResultsAlert.style.display = "none";
+      }
+    }
+
+    AOS.init();
+  </script>
+</body>
+
+</html>

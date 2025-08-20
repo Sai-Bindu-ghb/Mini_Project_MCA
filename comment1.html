@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Top stories</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Playwrite+CL+Guides&family=Playwrite+ES+Deco+Guides&family=Playwrite+ES+Guides&family=Playwrite+VN+Guides&family=Quicksand:wght@300..700&display=swap');
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+        header img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        h3{
+            font-size:35px;
+            font-family: "Lobster", serif;
+            margin-left:30%; 
+        }
+        .pic{
+            
+            height:300px;
+            width:500px;
+        }
+        @media only screen and (max-width:376px){
+            .pic{
+                height:250px;
+                width:300px;
+                margin-right: 10px;
+            }
+        }
+        .content {
+            padding: 20px;
+            text-align: justify;
+        }
+        .comment-form {
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-top: 1px solid #ddd;
+        }
+        .comment-form h3 {
+            margin-bottom: 15px;
+            margin-left: 27%;
+        }
+        .comment-form input,
+        .comment-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .comment-form button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right:14%;
+        }
+        .comment-form button:hover {
+            background-color: #0056b3;
+        }
+        .matter{
+            margin-left: 19%;
+            line-height: 1.6;
+            font-size:20px;
+
+        }
+        #name{
+            width:90%;
+            
+        }
+        #comment{
+            width:90%;
+            
+        }
+        .logo{
+            margin-left: 43%;
+            margin-right:1%;
+        }
+        .logo1{
+            margin-left:1%;
+            margin-right:1%;
+        }
+        .arrow{
+            height:200px;
+            width:200px;
+            position: relative;
+            animation: mymove 2s infinite;
+            padding-bottom: 20%;
+        }
+        @keyframes mymove{
+            from {left: 0px;}
+            to {left: 180px;}
+
+        }
+
+        #arrow1{
+            background-color: #f4f4f4;
+            padding-right: 0 !important;
+            padding-top:10%;
+        }
+
+        #arrow2{
+            background-color: #f4f4f4;
+            padding-left: 0 !important;
+        }
+        @media only screen and (max-width:376px){
+            .matter{
+                font-size:13px;
+                margin-left:-9px;
+            }
+            .logo{
+                margin-left:70px;
+                height:32px;
+                width:32px;
+            }
+            .logo1{
+                margin-left:10px;
+                height:30px;
+                width:30px;
+                
+            }
+            .logo2{
+            
+                height:30px;
+                width:30px;
+            }
+            .logo3{
+                
+                height:30px;
+                width:30px;
+            } 
+            .arrow{
+                display:none;
+            }  
+            body{
+                overflow-x: hidden;
+            }
+            html{
+                overflow-x: hidden;
+            }
+            .comment-form{
+                margin-left:35px;
+            }
+            h3{
+                font-size:25px;
+                font-family: "Lobster", serif;
+                margin-left:10% !important;
+            }
+            
+        }
+        @media only screen and (width:425px){
+            .matter{
+                font-size:15px;
+                margin-left:-9px;
+            }
+            .logo{
+                margin-left:100px;
+                height:40px;
+                width:40px;
+            }
+            .logo1{
+                margin-left:10px;
+                height:35px;
+                width:35px;
+                
+            }
+            .pic{
+                height:200px;
+            }
+            .logo2{
+            
+                height:35px;
+                width:35px;
+            }
+            .logo3{
+                
+                height:35px;
+                width:35px;
+            } 
+            .arrow{
+                display:none;
+            }  
+            body{
+                overflow-x: hidden;
+            }
+            html{
+                overflow-x: hidden;
+            }
+            .comment-form{
+                margin-left:35px;
+            }
+            h3{
+                font-weight:35px;
+                font-family: "Lobster", serif;
+                margin-left:10% !important;
+            }
+            #commentsSection{
+                margin-left:60px !important;
+            }
+            
+        }
+        @media only screen and (width:768px){
+            #arr{
+                animation: none;
+                
+            }
+            h3{
+                font-weight:35px;
+                font-family: "Lobster", serif;
+                margin-left:30%;
+            }
+            .matter{
+                font-size:18px;
+                margin-left:-9px;
+            }
+            .logo{
+                margin-left:300px;
+                height:40px;
+                width:40px;
+            }
+            .logo1{
+                margin-left:10px;
+                height:35px;
+                width:35px;
+                
+            }
+            .pic{
+                height:250px;
+            }
+            .logo2{
+            
+                height:35px;
+                width:35px;
+            }
+            .logo3{
+                
+                height:35px;
+                width:35px;
+            }  
+            body{
+                overflow-x: hidden;
+            }
+            html{
+                overflow-x: hidden;
+            }
+            .comment-form{
+                margin-left:35px;
+            }
+            h3{
+                font-weight:35px;
+                font-family: "Lobster", serif;
+                margin-left:14% !important;
+            }
+            #commentsSection{
+                margin-left:230px !important;
+            }    
+            
+        }
+        @media only screen and (width:1024px){
+            #arr{
+                animation: none;
+                
+            }
+            h3{
+                font-weight:35px;
+                font-family: "Lobster", serif;
+                margin-left:30%;
+            }
+            .matter{
+                font-size:18px;
+                margin-left:60px;
+            }
+            .logo{
+                margin-left:400px;
+                height:40px;
+                width:40px;
+            }
+            .logo1{
+                margin-left:10px;
+                height:35px;
+                width:35px;
+                
+            }
+            .pic{
+                height:250px;
+            }
+            .logo2{
+            
+                height:35px;
+                width:35px;
+            }
+            .logo3{
+                
+                height:35px;
+                width:35px;
+            }  
+            body{
+                overflow-x: hidden;
+            }
+            html{
+                overflow-x: hidden;
+            }
+            .comment-form{
+                margin-left:35px;
+            }
+            h3{
+                font-weight:35px;
+                font-family: "Lobster", serif;
+                margin-left:13%;
+            }
+            #commentsSection{
+                margin-left:230px !important;
+            }    
+            
+        }
+        .logo1{
+            margin-left:1%;
+            margin-right:1%;
+        }
+    
+        .arrow{
+            height:200px;
+            width:200px;
+            position: relative;
+            animation: mymove 2s infinite;
+            padding-bottom: 20%;
+        }
+        @keyframes mymove{
+            from {left: 0px;}
+            to {left: 180px;}
+
+        }
+
+        #arrow1{
+            background-color: #f4f4f4;
+            padding-right: 0 !important;
+            padding-top:10%;
+        }
+
+        #arrow2{
+            background-color: #f4f4f4;
+            padding-left: 0 !important;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="hello" data-aos="zoom-in-left">
+           <img src="./images/Top2.avif" alt="Sample Image" class="pic">
+        </div>
+    </header>
+    <div class="content">
+        <p class="matter">
+            Gukesh Dommaraju, 18, had a rapturous reception from Indian fans when he flew back to Chennai after<br>deposing China’s Ding Liren for the world title 7.5-6.5 by winning their 14th and final game in Singapore.<br>It was an occasion which, in Indian terms, could only have been surpassed in intensity by a winning IPL <br>cricket team, while its English equivalent would be a home city football celebration for Premier or Cham<br>-pions League winners.
+        </p>
+        <p class="matter">The underlying message was that India’s chess ecosystem is strong, with over 80 grandmasters, over <br>120 international masters, and tens of thousands of rated players. It is the 21st century equivalent of <br>the Soviet Union’s dominant decades in the 1940s and 1950s.</p>
+        <p class="matter">For Gukesh, the period of celebration will be short. Next month he starts play in the Netherlands at Ta-<br>ta Steel Wijk aan Zee, known as the chess Wimbledon and one of a trio of major tournaments in which <br>the teenager needs to perform well to impress sceptics who believe that the quality of play in Singapore<br> was below the best world championship standards.</p>    
+        <a href="https://www.theguardian.com/sport/2024/dec/20/chess-gukesh-and-india-celebrate-after-win-but-new-challenges-are-emerging"><img width="45" height="45" src="https://img.icons8.com/3d-fluency/94/whatsapp-logo.png" alt="whatsapp-logo" class="logo"/></a>   
+        <a href="https://www.theguardian.com/sport/2024/dec/20/chess-gukesh-and-india-celebrate-after-win-but-new-challenges-are-emerging"><img width="43" height="43" src="https://img.icons8.com/color/48/facebook-new.png" alt="facebook-new" class="logo2"/></a>    
+        <a href="https://www.theguardian.com/sport/2024/dec/20/chess-gukesh-and-india-celebrate-after-win-but-new-challenges-are-emerging"><img width="40" height="40" src="https://img.icons8.com/color/48/google-logo.png" alt="google-logo" class="logo1"/></a>
+        <a href="https://www.theguardian.com/sport/2024/dec/20/chess-gukesh-and-india-celebrate-after-win-but-new-challenges-are-emerging"><img width="42" height="42" src="https://img.icons8.com/3d-fluency/94/instagram-logo.png" alt="instagram-logo"class="logo3"/></a>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4" id="arrow1">
+                <img src="./images/arr.png" class="arrow"id="arr">
+            </div>
+            <div class="col-md-8" id="arrow2">
+                <div class="comment-form"data-aos="zoom-in">
+                    <h3>Leave a Comment</h3>
+                    <form id="commentForm">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required="">
+                    <textarea id="comment" name="comment" rows="4" placeholder="Your Comment" required=""></textarea>
+                    <center><button type="submit">Submit</button></center>
+                    </form>
+                </div>
+            </div>
+            
+          
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const commentForm = document.getElementById('commentForm');
+            const nameInput = document.getElementById('name');
+            const commentInput = document.getElementById('comment');
+            const pageId = 'top-stories-page'; // Unique identifier for this page
+            
+	
+            // Function to save comments to local storage
+            function saveComment(name, comment) {
+                const comments = JSON.parse(localStorage.getItem(pageId)) || [];
+                comments.push({ name, comment, date: new Date().toLocaleString() });
+                localStorage.setItem(pageId, JSON.stringify(comments));
+            }
+            // Function to display comments
+            function displayComments() {
+                
+                const comments = JSON.parse(localStorage.getItem(pageId)) || [];
+                const commentSection = document.createElement('div');
+                commentSection.classList.add('comment-section');
+                
+              
+
+                comments.forEach(({ name, comment, date }) => {
+                    const commentBlock = document.createElement('div');
+                    commentBlock.innerHTML = `
+                        <p><strong>${name}</strong> (${date})</p>
+                        <p>${comment}</p>
+                        
+                    `;
+                    commentSection.style.marginLeft="35%";
+                    commentSection.style.marginTop="13px";
+                    commentSection.appendChild(commentBlock);
+                });
+                
+                document.body.appendChild(commentSection);
+            }
+           
+            // Event listener for form submission
+            commentForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                const name = nameInput.value.trim();
+                const comment = commentInput.value.trim();
+
+                if (name && comment) {
+                    saveComment(name, comment);
+                    alert(`Thank you, ${name}! Your comment has been saved.`);
+                    commentForm.reset();
+                    location.reload(); // Refresh the page to display the new comment
+                } else {
+                    alert('Please fill out both fields before submitting.');
+                }
+            });
+
+            // Display comments on page load
+            displayComments();
+        });
+
+        AOS.init();
+    </script>
+
+
+</body>
+</html>

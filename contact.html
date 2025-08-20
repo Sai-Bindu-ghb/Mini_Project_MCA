@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <title>Contact Us</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('./images/conbg.webp');
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .contact-card {
+      display: flex;
+      width: 800px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+      height:500px;
+    }
+
+    .left-section {
+      flex: 1;
+    }
+
+    .left-section img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity:0.8;
+    }
+
+    .right-section {
+      flex: 1;
+      padding: 30px;
+      background-color: #fff;
+      position: relative;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .logo .circle {
+      width: 20px;
+      height: 20px;
+      background-color: #000;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .logo .dots {
+      width: 40px;
+      height: 10px;
+      background-color: #ffc107;
+      position: relative;
+    }
+
+    .logo .dots:before,
+    .logo .dots:after {
+      content: '';
+      width: 10px;
+      height: 10px;
+      background-color: #ffc107;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: 50%;
+    }
+
+    .logo .dots:before {
+      left: -15px;
+    }
+
+    .logo .dots:after {
+      right: -15px;
+    }
+
+    .info {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: bold;
+      color: #000;
+      margin-bottom: 10px;
+      margin-left: 70px;
+    }
+
+    .details p {
+      font-size: 14px;
+      color: #333;
+      margin: 5px 0;
+      display: flex;
+      align-items: center;
+      margin-left: 60px;
+      margin-bottom: 15px;
+    }
+
+    .details i {
+      margin-right: 10px;
+      color: #ffc107;
+    }
+    .sp{
+      color:black;
+      font-weight: bold;
+    }
+    .para{
+      font-size: 16px;
+    }
+    #b1{
+      margin-left: 130px;
+      margin-Top: 20px;
+    }
+    .icon{
+      height:23px;
+      margin-right:4px;
+    }
+    @media only screen and (width:320px){
+      .contact-card{
+        width:300px;
+        height:400px;
+      }
+      .info{
+        font-size:12px;
+      }
+      h1{
+        font-size:19px;
+      }
+      p{
+        font-size:15px;
+        margin-left:-10px;
+      }
+      .details p{
+        font-size:10px;
+        margin-left:-10px;
+      }
+    }
+    @media only screen and (width:375px){
+      .contact-card{
+        width:300px;
+        height:420px;
+      }
+      .info{
+        font-size:12px;
+      }
+      h1{
+        font-size:19px;
+      }
+      p{
+        font-size:14px;
+        margin-left:-10px;
+      }
+      .details p{
+        font-size:10px;
+        margin-left:-10px;
+      }
+      #b1{
+        margin-top:-5px;
+        margin-left:70px;
+        height:30px;
+        font-size: 13px;
+      }
+    }
+    @media only screen and (width:425px){
+      .contact-card{
+        width:380px;
+        height:410px;
+      }
+      .info{
+        font-size:12px;
+      }
+      h1{
+        font-size:19px;
+        margin-left:60px;
+      }
+      p{
+        font-size:14px;
+        margin-left:-10px;
+      }
+      .details p{
+        font-size:13px;
+      }
+      .text{
+        line-height: 0.5px;
+      }
+      .para{
+        font-size:15px;
+        margin-left:-10px;
+      }
+      .icon{
+        height:15px;
+        margin-left:-50px;
+        line-height:1px;
+        margin-right:10px;
+      }
+      .add{
+        margin-left:10px !important;
+        font-size: 14px !important;
+      }
+      .add1{
+        margin-left:60px !important;
+        font-size: 14px !important;
+      }
+      #b1{
+        margin-Top:-5px !important;
+        margin-left:70px !important;
+      }
+    }
+    @media only screen and (width:768px){
+      .contact-card{
+        width:680px;
+        height:410px;
+      }
+      .info{
+        font-size:12px;
+      }
+      h1{
+        font-size:19px;
+        margin-left:60px;
+      }
+      p{
+        font-size:15px;
+        margin-left:-10px;
+      }
+      .details p{
+        font-size:13px;
+      }
+      .text{
+        line-height: 0.5px;
+      }
+      .para{
+        font-size:15px;
+        margin-left:-10px;
+      }
+      .icon{
+        height:15px;
+        margin-left:-50px;
+        line-height:1px;
+        margin-right:10px;
+      }
+      .add{
+        margin-left:10px !important;
+        font-size: 15px !important;
+      }
+      .add1{
+        margin-left:60px !important;
+        font-size: 15px !important;
+      }
+      #b1{
+        margin-Top:-5px !important;
+        margin-left:80px !important;
+      }
+    }
+    @media only screen and (width:1024px){
+      .contact-card{
+        height:430px;
+        width:700px;
+      }
+      .info{
+        font-size:14px;
+      }
+      h1{
+        font-size:23px;
+        margin-left:70px;
+      }
+      p{
+        font-size:16px;
+        margin-left:-10px;
+      }
+      .text{
+        line-height: 0.3px;
+      }
+      .para{
+        font-size:15px;
+        margin-left:-10px;
+      }
+      .icon{
+        height:15px;
+        margin-left:-50px;
+        line-height:1px;
+        margin-right:10px;
+      }
+      .add{
+        margin-left:10px !important;
+        font-size: 15px !important;
+      }
+      .add1{
+        margin-left:60px !important;
+        font-size: 15px !important;
+      }
+      #b1{
+        margin-Top:-2px !important;
+        margin-left:90px !important;
+      }
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="contact-card"data-aos="flip-left">
+    <!-- Left Section -->
+    <div class="left-section">
+      <img src="./images/contac1.jpg" alt="Office">
+    </div>
+    <!-- Right Section -->
+    <div class="right-section">
+      <div class="content">
+        <!-- Logo Section -->
+        <div class="logo">
+          <div class="circle"></div>
+          <div class="dots"></div>
+        </div>
+        <!-- Info Section -->
+        <p class="info">FOR MORE INFORMATION</p>
+        <h1>Get In Touch</h1>
+        <p>We're here to assist you <span class="sp">!</span> If you have any question or need assistance, please feel free to reach out to us.</p>
+        <!-- Details Section -->
+        <div class="details">
+          <p class="text"><img src="https://img.icons8.com/ios-filled/50/email.png" alt="Email" class="icon">
+            <span class="para"> currentclicksofindia@gmail.com</span></p>
+          <p style="font-size:15px" class="add1"><img src="https://img.icons8.com/ios-filled/50/address.png"class="icon" alt="Address">
+            M8JX+3G6, Balajy Colony, Tirumala, </p>
+            <p style="font-size:15px" class= "add">Tirupati, Andhra Pradesh 517504.</p>
+          <p><img src="https://img.icons8.com/ios-filled/50/phone.png"class="icon" alt="Phone">
+            <span class="para">123-456-7890</span></p>
+            <button type="button" class="btn btn-warning "id="b1">Contact Us</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

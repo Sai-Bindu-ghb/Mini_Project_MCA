@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playwrite+ES+Deco+Guides&family=Playwrite+VN+Guides&family=Quicksand:wght@300..700&display=swap');
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+    background-color: #333;
+    opacity: 2px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd; /* Optional border */
+}
+nav {
+    background-color: #444;
+    overflow: hidden;
+    padding-left: 550px;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+   
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+.content {
+    padding: 20px;
+}
+.img1{
+    height:290px;
+    width:600px;
+    margin-left:20px;
+    margin-top: 10px;
+    border-radius:10px;margin-bottom: 10px;
+}
+.img2{
+    height:350px;
+    width:120%;
+    border-radius:10px;
+}
+.img3{
+    border:0px;
+    border-radius:10px;
+    margin-top:40px;
+}
+.news-article {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.news-article img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.con1{
+    
+    
+    width:600px;
+    margin-left:100px;
+    margin-top:60px;
+    line-height: 35px;
+    text-align: justify;
+
+}
+.para{
+    margin-left:180px; 
+}
+.foot{
+    font-size: 18px;
+    font-weight: bold;
+}
+.head{
+    font-family: "Lobster", serif;
+    margin-top:40px;
+    font-size: 40px;
+    color:rgb(15, 212, 130);
+}
+.sp{
+    color:rgb(122, 12, 224);
+}
+.sup{
+    font-size:18px;
+    
+}
+.hello{
+    margin-bottom: 10px;
+}
+.hello1{
+    margin-bottom: 10px;
+}
+.matter{
+    margin-left:50%;
+}
+.par{
+    margin-left:15%;
+    margin-top:12px;
+    text-align: justify;
+    line-height: 35px;
+}
+
+.par1{
+    line-height: 35px;
+    text-align: justify;
+    margin-top:33px;
+    margin-bottom: 30px;
+}
+.hello2{
+    margin-bottom: 70px;
+    text-align: justify;
+    line-height: 35px;
+}
+/* Base styles are already defined in style6.css */
+@media only screen and (width:1440px){
+    .img1{
+        margin-left: 80px;
+    
+    }
+    .img2{
+        margin-left: 40px;
+    
+    }
+    
+    .hello1{
+        margin-left: 0px; 
+    }
+}
+/* Media Query for 1024px width (Tablets and small laptops) */
+@media (max-width: 1024px) {
+    body{
+        margin:0;
+        overflow-x: hidden;
+    }
+    
+    header {
+        padding: 6px;
+        
+    }
+    .head {
+        font-size: 28px;
+       
+    }
+    .hello{
+        font-size: 15px;
+    }
+    .img1{
+        height:200px;
+        width:100%;
+        
+    }
+    .img2{
+        height:250px;
+        width:100%;
+        margin-left:0px;
+        margin-Top:30px;
+    }
+    .img3{
+        height:230px;
+        width:100%;
+        margin-left:0px;
+        margin-Top:30px;
+    }
+    .sup {
+        font-size: 15px;
+    }
+    .con1 {
+        width: 95%;
+        margin: 10px auto;
+    }
+    
+    nav a {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+    .par, .par1, .hello2 {
+        margin: 5px;
+        font-size: 15px !important;
+        line-height: 2.5;
+    }
+    .hello2{
+        margin-bottom: 100px;
+    }
+    footer {
+        font-size: 16px;
+        
+    }
+}
+/* Media Query for 768px width (Tablets in portrait mode) */
+@media (max-width: 768px) {
+    body{
+        margin:0;
+        overflow-x: hidden;
+    }
+    
+    header {
+        padding: 6px;
+        
+    }
+    .head {
+        font-size: 28px;
+       
+    }
+    .hello{
+        font-size: 15px;
+    }
+    .img1{
+        height:180px;
+        width:100%;
+        
+    }
+    .img2{
+        height:250px;
+        width:100%;
+        margin-left:0px;
+        margin-Top:30px;
+    }
+    .img3{
+        height:230px;
+        width:100%;
+        margin-left:0px;
+        margin-Top:30px;
+    }
+    .sup {
+        font-size: 15px;
+    }
+    .con1 {
+        width: 95%;
+        margin: 10px auto;
+    }
+    
+    nav a {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+    .par, .par1, .hello2 {
+        margin: 5px;
+        font-size: 17px !important;
+        line-height: 1.5;
+    }
+    .hello2{
+        margin-bottom: 100px;
+    }
+    footer {
+        font-size: 16px;
+        
+    }
+}
+/* Media Query for 425px width (Small smartphones) */
+@media (max-width: 425px) {
+    body{
+        margin:0;
+        overflow-x: hidden;
+    }
+    
+    header {
+        padding: 6px;
+        
+    }
+    .head {
+        font-size: 28px;
+       
+    }
+    .hello{
+        font-size: 17px;
+    }
+    .img1{
+        height:150px;
+        width:100%;
+        margin-left:0px;
+    }
+    .img2{
+        height:150px;
+        width:100%;
+        margin-left:0px;
+    }
+    .img3{
+        height:150px;
+        width:100%;
+        margin-left:0px;
+    }
+    .sp {
+        font-size: 30px;
+    }
+    .con1 {
+        width: 95%;
+        margin: 10px auto;
+    }
+    
+    nav a {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+    .par, .par1, .hello2 {
+        margin: 5px;
+        font-size: 17px !important;
+        line-height: 1.5;
+    }
+    .hello2{
+        margin-bottom: 100px;
+    }
+    footer {
+        font-size: 14px;
+        
+    }
+}
+/* Media Query for 375px width (iPhone 6/7/8) */
+@media (max-width: 375px) {
+    body{
+        margin:0;
+        overflow-x: hidden;
+    }
+    
+    header {
+        padding: 6px;
+        
+    }
+    .head {
+        font-size: 28px;
+       
+    }
+    .hello{
+        font-size: 17px;
+    }
+    .img1{
+        height:150px;
+        width:100%;
+        margin-left:0px;
+    }
+    .img2{
+        height:150px;
+        width:100%;
+        margin-left:0px;
+    }
+    .img3{
+        height:150px;
+        width:100%;
+        margin-left:0px;
+    }
+    .sp {
+        font-size: 30px;
+    }
+    .con1 {
+        width: 95%;
+        margin: 10px auto;
+    }
+    
+    nav a {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+    .par, .par1, .hello2 {
+        margin: 5px;
+        font-size: 17px !important;
+        line-height: 1.5;
+    }
+    .hello2{
+        margin-bottom: 100px;
+    }
+    footer {
+        font-size: 14px;
+        
+    }
+}
+
+/* Media Query for 320px width (Very small smartphones) */
+@media (max-width: 320px) {
+    body{
+        margin:0;
+        overflow-x: hidden;
+    }
+    
+    header {
+        padding: 6px;
+        
+    }
+    .head {
+        font-size: 28px;
+       
+    }
+    .hello{
+        font-size: 17px;
+    }
+    .img1{
+        height:150px;
+        width:100%;
+        margin-left:0px;
+    }
+    .img2{
+        height:150px;
+        width:100%;
+        margin-left:0px;
+    }
+    .img3{
+        height:150px;
+        width:100%;
+        margin-left:0px;
+    }
+    .sp {
+        font-size: 30px;
+    }
+    .con1 {
+        width: 95%;
+        margin: 10px auto;
+    }
+    
+    nav a {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+    .par, .par1, .hello2 {
+        margin: 5px;
+        font-size: 17px !important;
+        line-height: 1.5;
+    }
+    .hello2{
+        margin-bottom: 100px;
+    }
+    footer {
+        font-size: 14px;
+        
+    }
+}
